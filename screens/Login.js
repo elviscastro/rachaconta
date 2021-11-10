@@ -14,7 +14,7 @@ export default function Login({ navigation }) {
         <View style={styles.login__form}>
             <Input style={styles.login__input} placeholder='Usuário:' leftIcon={<Icon name='user' size={24} color='black'/>} />
             <Input style={styles.login__input} placeholder='Senha:' secureTextEntry={true} leftIcon={<Icon name='lock' size={24} color='black'/>} />
-            <TouchableOpacity style={styles.login__button} onPress={()=>navigation.navigate('Mesas')}>
+            <TouchableOpacity style={styles.login__button} onPress={()=>navigation.navigate('Main')}>
                 <Text style={styles.login__buttonText}>Entrar</Text>
             </TouchableOpacity>
         </View>
