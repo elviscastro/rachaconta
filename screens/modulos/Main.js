@@ -1,6 +1,8 @@
 import React from 'react';
 import { View } from 'react-native';
-import { Button, Input, ListItem } from 'react-native-elements'
+import { Button, ListItem } from 'react-native-elements'
+import { StyleSheet } from 'react-native';
+
 
 const list = [
   {
@@ -17,7 +19,7 @@ const list = [
 
 export default function Main({navigation}){
   return (
-    <View>
+    <View style={styles.container}>
     <View>
       {
         list.map((l, i) => (
@@ -33,7 +35,21 @@ export default function Main({navigation}){
     <Button
     title="Voltar"
     onPress={()=>navigation.navigate('Login')}
+    style={styles.button}
     />
     </View>
   );
 }
+
+const styles = StyleSheet.create({
+
+  container:{
+    display: 'flex',
+
+  },
+  button:{
+    marginTop: 40,
+  }
+});
+
+
