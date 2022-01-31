@@ -6,11 +6,12 @@ import { Input } from 'react-native-elements'
 
 export default function Login({ navigation }) {
   return (
-    <View style={styles.container}>
-        <View >
-            <Image style={styles.logoShape} source={require('../assets/img/logo.jpeg')} />
-        </View>
-        <Text style={styles.title}>Login</Text>
+    <KeyboardAvoidingView style={[styles.container]}>
+        <Image
+          style={styles.tinyLogo}
+          source={require('../assets/img/logomarca.png')}
+        />
+
         <View style={styles.login__form}>
             <Input style={styles.login__input} placeholder='Usuário' leftIcon={<Icon name='user' size={24} color='black'/>} />
             <Input style={styles.login__input} placeholder='Senha' secureTextEntry={true} leftIcon={<Icon name='lock' size={24} color='black'/>} />
@@ -28,6 +29,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#A0BCC4',
     alignItems: 'center',
     justifyContent: 'center',
+    padding: 100,
   },
   darkbg: {
     backgroundColor: "#333"
@@ -67,26 +69,8 @@ const styles = StyleSheet.create({
     color: "#fff",
     textAlign: 'center'
   },
-
-  logoShape: {
+  tinyLogo: {
     width: 200,
     height: 200,
-    borderRadius: 50,
-    marginLeft: 40,
-    marginBottom: 16,
   },
-  
-  viewLogin: {
-    width: 100,
-    marginTop: 100,
-    display: 'flex',
-  },
-
-  title:{
-    fontSize:32,
-    marginBottom: 40,
-    marginTop: 40,
-    color: '#fff',
-    fontWeight: 600
-  }
 });
