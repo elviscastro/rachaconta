@@ -19,7 +19,7 @@ export default function Login({ navigation }) {
                 <Text style={styles.login__buttonText}>Entrar</Text>
             </TouchableOpacity>
         </View>
-      </View>
+     </KeyboardAvoidingView>
   );
 }
 

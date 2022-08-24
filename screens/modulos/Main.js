@@ -14,6 +14,16 @@ const list = [
     name: 'Usuário',
     subtitle: 'Configuração de usuário',
     path: 'CriarUsuario'
+  },
+  {
+    name: 'Consumo',
+    subtitle: 'Consumo',
+    path: 'Consumo'
+  },
+  {
+    name: 'Cardapio',
+    subtitle: 'Cardapio',
+    path: 'Cardapio'
   }
 ]
 

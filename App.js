@@ -8,6 +8,8 @@ import MesasNovo from './screens/MesasNovo'
 import MesaDetalhes from './screens/MesaDetalhes'
 import CriarUsuario from './screens/usuarios/CriarUsuarios'
 import Main from './screens/modulos/Main'
+import Consumo from './screens/Consumo'
+import Cardapio from './screens/Cardapio'
 
 const Stack = createNativeStackNavigator();
 
@@ -21,6 +23,7 @@ export default function App() {
         <Stack.Screen name="MesasNovo" component={MesasNovo} />
         <Stack.Screen name="MesaDetalhes" component={MesaDetalhes} />
         <Stack.Screen name="CriarUsuario" component={CriarUsuario} />
+        <Stack.Screen name="Consumo" component={Consumo} />
         <Stack.Screen name="Main" component={Main} />
       </Stack.Navigator>
     </NavigationContainer>
