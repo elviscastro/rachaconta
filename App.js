@@ -24,6 +24,7 @@ export default function App() {
         <Stack.Screen name="MesaDetalhes" component={MesaDetalhes} />
         <Stack.Screen name="Celso" component={MesaDetalhes} />
         <Stack.Screen name="Luiz" component={MesaDetalhes} />
+        <Stack.Screen name="Zezinho" component={MesaDetalhes} />
         <Stack.Screen name="CriarUsuario" component={CriarUsuario} />
         <Stack.Screen name="Consumo" component={Consumo} />
         <Stack.Screen name="Main" component={Main} />
